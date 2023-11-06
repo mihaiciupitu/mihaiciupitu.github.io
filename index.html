@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML CV</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="top">
+        <div class="image">
+          <img
+            src="images/keyboard.svg"
+            alt="me"
+            width="180px"
+            height="180px"
+          />
+        </div>
+        <div class="info">
+          <h1>Mihai-Andrei Ciupitu</h1>
+
+          <h2 id="job-title">Freelance Front End Developer</h2>
+        </div>
+      </div>
+
+      <ul id="top-menu-bar">
+        <li><a href="#" class="active link1">Home</a></li>
+        <li><a href="#" class="link2">Skills</a></li>
+        <li><a href="#" class="link3">Projects</a></li>
+        <li><a href="#" class="link4">Languages</a></li>
+      </ul>
+    </header>
+    <div class="content">
+      <div class="side-menu">
+        <div class="side1">
+          <form action="secretara.html">
+            <h2>Contact</h2>
+            <div>
+              <label for="user-email"> Email </label>
+              <input
+                type="email"
+                required
+                id="user-email"
+                name="email"
+                placeholder="Your Email"
+              />
+            </div>
+
+            <div>
+              <label for="yourName"> Your Name </label>
+              <input
+                type="text"
+                name="name"
+                required
+                id="yourName"
+                placeholder="Your Name"
+              />
+            </div>
+            <button type="submit" name="submit">Contact Me</button>
+          </form>
+        </div>
+        <div class="side2">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, iure.
+          Hic harum adipisci molestiae blanditiis ea sit a, earum natus, nobis
+          exercitationem, corporis amet quam expedita impedit perferendis. Rem,
+          voluptas!
+        </div>
+      </div>
+      <div class="main">
+        <h2>Known Languages</h2>
+        <table border="1">
+          <tr>
+            <th>Language</th>
+            <th>Level</th>
+          </tr>
+          <tr>
+            <td>English</td>
+            <td>High Proficiency</td>
+          </tr>
+          <tr>
+            <td>Romanian</td>
+            <td>Native</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <footer>
+      <a href="https://www.linkedin.com/in/mihaiandreiciupitu" target="_blank">
+        <img src="/images/LinkedIn_Logo.svg.png" width="100px" />
+      </a>
+    </footer>
+    <script>
+      var active = document.querySelector(".link1");
+      active.addEventListener("click", function () {
+        active.classList.add("active");
+      });
+      document.addEventListener("click", function (event) {
+        if (event.target != active) active.classList.remove("active");
+      });
+      var active2 = document.querySelector(".link2");
+      active2.addEventListener("click", function () {
+        active2.classList.add("active");
+      });
+      document.addEventListener("click", function (event) {
+        if (event.target != active2) active2.classList.remove("active");
+      });
+      var active3 = document.querySelector(".link3");
+      active3.addEventListener("click", function () {
+        active3.classList.add("active");
+      });
+      document.addEventListener("click", function (event) {
+        if (event.target != active3) active3.classList.remove("active");
+      });
+      var active4 = document.querySelector(".link4");
+      active4.addEventListener("click", function () {
+        active4.classList.add("active");
+      });
+      document.addEventListener("click", function (event) {
+        if (event.target != active4) active4.classList.remove("active");
+      });
+
+      var job = document.getElementById("job-title");
+      console.log(job.innerHTML);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,130 @@
+.circle {
+  background-color: black;
+  border-radius: 100px;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  font-size: small;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rubik {
+  width: 363px;
+  height: 363px;
+  background-color: black;
+  margin: 50px 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  border: 5px solid black;
+}
+.side1 {
+  width: 111px;
+  height: 111px;
+  background-color: blueviolet;
+  border-bottom-right-radius: 10px;
+  border: 5px solid black;
+}
+
+.side2 {
+  width: 111px;
+  height: 111px;
+  background-color: yellow;
+  border-bottom-right-radius: 10px;
+  border: 5px solid black;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.side3 {
+  width: 111px;
+  height: 111px;
+  background-color: blueviolet;
+  border-bottom-left-radius: 10px;
+  border: 5px solid black;
+}
+.side4 {
+  width: 111px;
+  height: 111px;
+  background-color: rgb(43, 226, 107);
+
+  border: 5px solid black;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.side5 {
+  width: 111px;
+  height: 111px;
+  background-color: yellow;
+
+  border: 5px solid black;
+  border-radius: 30px;
+}
+.side6 {
+  width: 111px;
+  height: 111px;
+  background-color: blueviolet;
+
+  border: 5px solid black;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+.side7 {
+  width: 111px;
+  height: 111px;
+  background-color: blueviolet;
+  border-top-right-radius: 10px;
+  border: 5px solid black;
+}
+.side8 {
+  width: 111px;
+  height: 111px;
+  background-color: rgb(43, 226, 107);
+
+  border: 5px solid black;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+.side9 {
+  width: 111px;
+  height: 111px;
+  background-color: rgb(43, 226, 107);
+  border-top-left-radius: 10px;
+  border: 5px solid black;
+}
+
+.chess {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  width: 800px;
+  margin-top: 50px;
+  border: 10px solid black;
+}
+.white {
+  background-color: white;
+  width: 100px;
+  height: 100px;
+}
+.black {
+  background-color: black;
+  width: 100px;
+  height: 100px;
+  color: white;
+}
+span {
+  width: 100px;
+  height: 100px;
+  align-items: flex-end;
+  justify-content: right;
+  display: flex;
+}
+.span1 {
+  width: 100px;
+  height: 80px;
+  align-items: flex-end;
+  justify-content: right;
+  display: flex;
+  margin: 0;
+}
