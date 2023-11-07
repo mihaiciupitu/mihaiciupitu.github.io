@@ -84,7 +84,7 @@
 
     <footer>
       <a href="https://www.linkedin.com/in/mihaiandreiciupitu" target="_blank">
-        <img src="/images/LinkedIn_Logo.svg.png" width="100px" />
+        <img src="/images/LinkedIn_Logo.svg" width="140px" class="logo" />
       </a>
     </footer>
     <script>
@@ -119,9 +119,11 @@
 
       var icon = document.getElementById("icon");
       var imgdark = document.querySelector(".image");
+      var logodark = document.querySelector(".logo");
       icon.onclick = function () {
         document.body.classList.toggle("dark-theme");
         imgdark.classList.toggle("image-dark");
+        logodark.classList.toggle("logo-dark");
         if (document.body.classList.contains("dark-theme"))
           icon.src = "images/moon.png";
         else icon.src = "images/sun.png";
