@@ -24,6 +24,8 @@ body {
 }
 .image {
   margin-left: 10px;
+  width: 180px;
+  height: 180px;
 }
 .image img:hover {
   transition: 2s;
@@ -36,6 +38,7 @@ body {
   color: var(--primary-color);
   margin: 0;
   padding: 2px;
+  width: 100%;
 }
 #top-menu-bar li {
   display: inline-block;
@@ -87,11 +90,11 @@ th {
   padding: 5px;
 }
 #icon {
-  width: 22px;
   cursor: pointer;
   float: right;
   padding: 0;
   margin-top: 5px;
+  width: 22px;
 }
 
 :root {
@@ -105,4 +108,25 @@ th {
 }
 .image-dark {
   filter: invert(100%);
+}
+@media screen and (max-width: 600px) {
+  .info {
+    font-size: 7px;
+  }
+  .image {
+    width: 90px;
+    height: 90px;
+    margin: 0;
+    margin-left: 5px;
+  }
+  body {
+    font-size: 10px;
+  }
+
+  .content {
+    flex-direction: column-reverse;
+  }
+  #icon {
+    width: 15px;
+  }
 }
