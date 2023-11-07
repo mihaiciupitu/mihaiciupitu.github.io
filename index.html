@@ -24,7 +24,7 @@
           <h2 id="job-title">Freelance Front End Developer</h2>
         </div>
       </div>
-
+      <img src="/images/sun.png" id="icon" />
       <ul id="top-menu-bar">
         <li><a href="#" class="active link1">Home</a></li>
         <li><a href="#" class="link2">Skills</a></li>
@@ -122,8 +122,15 @@
         if (event.target != active4) active4.classList.remove("active");
       });
 
-      var job = document.getElementById("job-title");
-      console.log(job.innerHTML);
+      var icon = document.getElementById("icon");
+      var imgdark = document.querySelector(".image");
+      icon.onclick = function () {
+        document.body.classList.toggle("dark-theme");
+        imgdark.classList.toggle("image-dark");
+        if (document.body.classList.contains("dark-theme"))
+          icon.src = "images/moon.png";
+        else icon.src = "images/sun.png";
+      };
     </script>
   </body>
 </html>
