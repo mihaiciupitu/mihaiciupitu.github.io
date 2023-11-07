@@ -6,6 +6,8 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 .top {
   display: flex;
@@ -30,8 +32,8 @@ body {
 
 #top-menu-bar {
   text-align: center;
-  background-color: black;
-  color: white;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
   margin: 0;
   padding: 2px;
 }
@@ -43,18 +45,18 @@ body {
 #top-menu-bar a {
   text-decoration: none;
   padding: 5px 15px;
-  color: white;
+  color: var(--primary-color);
   border-radius: 4px;
   display: inline-block;
   transition: 0.5s;
 }
 #top-menu-bar a:visited {
-  color: white;
+  color: var(--primary-color);
 }
 #top-menu-bar a.active,
 #top-menu-bar a:hover {
-  background-color: white;
-  color: black;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .content {
@@ -82,4 +84,24 @@ td {
 }
 th {
   padding: 5px;
+}
+#icon {
+  width: 22px;
+  cursor: pointer;
+  float: right;
+  padding: 0;
+  margin-top: 5px;
+}
+
+:root {
+  --primary-color: white;
+  --secondary-color: black;
+  filter: invert(0%);
+}
+.dark-theme {
+  --primary-color: black;
+  --secondary-color: white;
+}
+.image-dark {
+  filter: invert(100%);
 }
