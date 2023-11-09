@@ -92,7 +92,7 @@ footer {
 }
 
 .side2 {
-  margin-top: 50px;
+  margin-top: 10px;
   box-shadow: 0 0 0 1px var(--secondary-color), 0 2px 3px var(--secondary-color);
   border-radius: 2px;
   margin-right: 10px;
