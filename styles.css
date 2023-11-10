@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap");
 html {
   height: 100%;
 }
@@ -25,7 +26,6 @@ body {
 .image {
   margin-left: 5px;
   width: 180px;
-  height: 180px;
 }
 
 #top-menu-bar {
@@ -57,7 +57,9 @@ body {
   background-color: var(--primary-color);
   color: var(--secondary-color);
 }
-
+body {
+  font-family: "PT Sans Narrow", sans-serif;
+}
 .content {
   display: flex;
   flex: 1;
@@ -109,7 +111,16 @@ th {
   margin-top: 5px;
   width: 22px;
 }
-
+.table-content {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 400px;
+}
+.table-content th {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
 :root {
   --primary-color: white;
   --secondary-color: black;
