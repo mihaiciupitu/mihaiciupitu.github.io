@@ -23,13 +23,9 @@ body {
   font-size: 0.8rem;
 }
 .image {
-  margin-left: 10px;
+  margin-left: 5px;
   width: 180px;
   height: 180px;
-}
-.image img:hover {
-  transition: 2s;
-  border-radius: 100%;
 }
 
 #top-menu-bar {
@@ -127,6 +123,9 @@ th {
 }
 .logo-dark {
   filter: invert(100%);
+}
+.display {
+  display: none;
 }
 @media screen and (max-width: 600px) {
   .info {

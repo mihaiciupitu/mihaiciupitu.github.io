@@ -66,21 +66,54 @@
         </div>
       </div>
       <div class="main">
-        <h2>Known Languages</h2>
-        <table border="1">
-          <tr>
-            <th>Language</th>
-            <th>Level</th>
-          </tr>
-          <tr>
-            <td>English</td>
-            <td>High Proficiency</td>
-          </tr>
-          <tr>
-            <td>Romanian</td>
-            <td>Native</td>
-          </tr>
-        </table>
+        <div class="languages display">
+          <h2>Known Languages</h2>
+          <table border="1">
+            <tr>
+              <th>Language</th>
+              <th>Level</th>
+            </tr>
+            <tr>
+              <td>English</td>
+              <td>High Proficiency</td>
+            </tr>
+            <tr>
+              <td>Romanian</td>
+              <td>Native</td>
+            </tr>
+          </table>
+        </div>
+        <div class="skills display">
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+          </ul>
+        </div>
+        <div class="projects display">
+          <ul>
+            <li>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Reiciendis a aperiam, eum fugiat voluptas, facilis inventore
+              provident accusantium minus consequatur cumque vitae saepe enim,
+              voluptatum facere quis iste nesciunt ratione?
+            </li>
+            <li>CSS</li>
+            <li>JS</li>
+          </ul>
+        </div>
+        <div class="home">
+          <ul>
+            <li>HTML</li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt
+              qui laboriosam facere magni odit, exercitationem pariatur, hic
+              laborum doloribus unde reiciendis natus obcaecati accusantium sit
+              nemo architecto error harum.
+            </li>
+            <li>JS</li>
+          </ul>
+        </div>
       </div>
     </div>
 
@@ -129,6 +162,39 @@
         if (document.body.classList.contains("dark-theme"))
           icon.src = "images/moon.png";
         else icon.src = "images/sun.png";
+      };
+
+      var display1 = document.querySelector(".link4");
+      var display2 = document.querySelector(".link3");
+      var display3 = document.querySelector(".link2");
+      var display4 = document.querySelector(".link1");
+      var dis = document.querySelector(".languages");
+      var dis2 = document.querySelector(".skills");
+      var dis3 = document.querySelector(".projects");
+      var dis4 = document.querySelector(".home");
+      display1.onclick = function () {
+        dis.classList.remove("display");
+        dis2.classList.add("display");
+        dis3.classList.add("display");
+        dis4.classList.add("display");
+      };
+      display2.onclick = function () {
+        dis.classList.add("display");
+        dis2.classList.add("display");
+        dis3.classList.remove("display");
+        dis4.classList.add("display");
+      };
+      display3.onclick = function () {
+        dis.classList.add("display");
+        dis2.classList.remove("display");
+        dis3.classList.add("display");
+        dis4.classList.add("display");
+      };
+      display4.onclick = function () {
+        dis.classList.add("display");
+        dis2.classList.add("display");
+        dis3.classList.add("display");
+        dis4.classList.remove("display");
       };
     </script>
   </body>
