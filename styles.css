@@ -74,6 +74,7 @@ body {
   margin-top: 10px;
   margin-right: 10px;
   padding: 24px;
+  margin-left: 10px;
 }
 .side1 {
   box-shadow: 0 0 0 1px var(--secondary-color), 0 2px 3px var(--secondary-color);
