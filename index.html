@@ -124,8 +124,20 @@
 
     <footer>
       <a href="https://www.linkedin.com/in/mihaiandreiciupitu" target="_blank">
-        <img src="/images/LinkedIn_Logo.svg" width="140px" class="logo" />
+        <img
+          src="/images/LinkedIn_Logo.svg"
+          width="55px"
+          class="logo"
+          height="35px"
+        />
       </a>
+      <a href="https://www.github.com/mihaiciupitu" target="_blank ">
+        <img src="/images/github.svg" width="35px" class="logo2" />
+      </a>
+
+      <a href="mailto:ciupitu.mihai7@gmail.com" target="_blank">
+        <img src="/images/email.svg" width="35px" class="logo3"
+      /></a>
     </footer>
     <script>
       var active = document.querySelector(".link1");
@@ -160,10 +172,14 @@
       var icon = document.getElementById("icon");
       var imgdark = document.querySelector(".image");
       var logodark = document.querySelector(".logo");
+      var logo2dark = document.querySelector(".logo2");
+      var logo3dark = document.querySelector(".logo3");
       icon.onclick = function () {
         document.body.classList.toggle("dark-theme");
         imgdark.classList.toggle("image-dark");
         logodark.classList.toggle("logo-dark");
+        logo2dark.classList.toggle("logo-dark");
+        logo3dark.classList.toggle("logo-dark");
         if (document.body.classList.contains("dark-theme"))
           icon.src = "images/moon.png";
         else icon.src = "images/sun.png";
