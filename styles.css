@@ -153,6 +153,9 @@ footer {
 .logo3 {
   margin-right: 15px;
 }
+.button {
+  margin-top: 5px;
+}
 @media screen and (max-width: 600px) {
   .info {
     font-size: 7px;
