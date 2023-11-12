@@ -182,4 +182,7 @@ footer {
   #icon {
     width: 15px;
   }
+  #message {
+    width: 200px;
+  }
 }
