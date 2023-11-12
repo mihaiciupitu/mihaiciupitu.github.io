@@ -156,6 +156,12 @@ footer {
 .button {
   margin-top: 5px;
 }
+#message {
+  width: 400px;
+
+  height: 100px;
+}
+
 @media screen and (max-width: 600px) {
   .info {
     font-size: 7px;

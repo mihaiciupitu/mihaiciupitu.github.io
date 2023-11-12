@@ -35,7 +35,10 @@
     <div class="content">
       <div class="side-menu">
         <div class="side1">
-          <form action="secretara.html">
+          <form
+            action="https://formsubmit.co/e8f86a3ebea2392df9878d1142e04b5a"
+            method="POST"
+          >
             <h2>Contact</h2>
             <div>
               <label for="user-email"> Email </label>
@@ -48,6 +51,12 @@
                 placeholder="Your Email"
               />
             </div>
+            <input type="hidden" name="_captcha" value="false" />
+            <input
+              type="hidden"
+              name="_next"
+              value="https://mihaiciupitu.github.io"
+            />
 
             <div>
               <label for="yourName"> Your Name </label>
@@ -59,6 +68,11 @@
                 id="yourName"
                 placeholder="Your Name"
               />
+            </div>
+            <div class="message">
+              <label for="message"> Your Message </label>
+              <br />
+              <textarea rows="4" name="message" id="message"> </textarea>
             </div>
             <button type="submit" name="submit" class="button">
               Contact Me
