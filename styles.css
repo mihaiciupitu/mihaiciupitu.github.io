@@ -212,18 +212,14 @@ footer {
   #message {
     width: 300px;
   }
-  .home {
-    font-size: 10px;
+  .home,
+  .skills,
+  .languages,
+  body,
+  .projects {
+    font-size: large;
   }
-  .skills {
-    font-size: 7px;
-  }
-  .home {
-    font-size: 7px;
-  }
-  .languages {
-    font-size: 7px;
-  }
+
   ul {
     padding-inline-start: 20px;
   }
