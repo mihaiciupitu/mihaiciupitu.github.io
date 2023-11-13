@@ -172,6 +172,13 @@ footer {
 .languages {
   margin-left: 20px;
 }
+.home h1,
+h2 {
+  margin-left: 25px;
+}
+.skills h1 {
+  margin-left: 25px;
+}
 @media screen and (max-width: 600px) {
   .info {
     font-size: 7px;
