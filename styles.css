@@ -13,7 +13,7 @@ body {
 .top {
   display: flex;
   flex-direction: row;
-  min-height: 140px;
+  min-height: 100px;
   align-items: center;
 }
 .info {
