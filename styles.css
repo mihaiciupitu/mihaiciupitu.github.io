@@ -173,11 +173,11 @@ footer {
   margin-left: 20px;
 }
 .home h1,
-h2 {
-  margin-left: 25px;
+.home h2 {
+  margin-left: 20px;
 }
 .skills h1 {
-  margin-left: 25px;
+  margin-left: 20px;
 }
 @media screen and (max-width: 600px) {
   .info {
@@ -190,7 +190,7 @@ h2 {
     margin-left: 5px;
   }
   body {
-    font-size: 10px;
+    font-size: 7px;
   }
 
   .content {
@@ -201,5 +201,20 @@ h2 {
   }
   #message {
     width: 300px;
+  }
+  .home {
+    font-size: 7px;
+  }
+  .skills {
+    font-size: 7px;
+  }
+  .home {
+    font-size: 7px;
+  }
+  .languages {
+    font-size: 7px;
+  }
+  ul {
+    padding-inline-start: 20px;
   }
 }
