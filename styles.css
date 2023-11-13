@@ -171,13 +171,23 @@ footer {
 }
 .languages {
   margin-left: 20px;
+  margin-right: 20px;
+  font-size: larger;
 }
 .home h1,
-.home h2 {
+.home p {
   margin-left: 20px;
+  margin-right: 20px;
 }
 .skills h1 {
   margin-left: 20px;
+  margin-right: 20px;
+}
+.skills li {
+  font-size: larger;
+}
+.projects li {
+  font-size: larger;
 }
 @media screen and (max-width: 600px) {
   .info {
