@@ -200,7 +200,7 @@ footer {
     margin-left: 5px;
   }
   body {
-    font-size: 7px;
+    font-size: 10px;
   }
 
   .content {
@@ -215,7 +215,6 @@ footer {
   .home,
   .skills,
   .languages,
-  body,
   .projects {
     font-size: large;
   }
