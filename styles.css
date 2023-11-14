@@ -183,12 +183,13 @@ footer {
   margin-left: 20px;
   margin-right: 20px;
 }
-.skills li {
+.skills li,
+.projects li,
+.side2,
+.home {
   font-size: larger;
 }
-.projects li {
-  font-size: larger;
-}
+
 @media screen and (max-width: 600px) {
   .info {
     font-size: 7px;
@@ -215,7 +216,8 @@ footer {
   .home,
   .skills,
   .languages,
-  .projects {
+  .projects,
+  .side2 {
     font-size: large;
   }
 
