@@ -174,10 +174,14 @@ footer {
   margin-right: 20px;
   font-size: larger;
 }
-.home h1,
-.home p,
+
 .skills h1 {
   margin-left: 40px;
+  margin-right: 20px;
+}
+.home h1,
+.home p {
+  margin-left: 20px;
   margin-right: 20px;
 }
 
