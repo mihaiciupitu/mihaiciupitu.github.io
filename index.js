@@ -42,36 +42,38 @@ icon.onclick = function () {
     icon.src = "images/moon.png";
   else icon.src = "images/sun.png";
 };
-
+function show(clasa) {
+  document.querySelector(clasa).classList.remove("display");
+}
+function hide(clasa) {
+  document.querySelector(clasa).classList.add("display");
+}
 var display1 = document.querySelector(".link4");
 var display2 = document.querySelector(".link3");
 var display3 = document.querySelector(".link2");
 var display4 = document.querySelector(".link1");
-var dis = document.querySelector(".languages");
-var dis2 = document.querySelector(".skills");
-var dis3 = document.querySelector(".projects");
-var dis4 = document.querySelector(".home");
+
 display1.onclick = function () {
-  dis.classList.remove("display");
-  dis2.classList.add("display");
-  dis3.classList.add("display");
-  dis4.classList.add("display");
+  show(".languages");
+  hide(".skills");
+  hide(".projects");
+  hide(".home");
 };
 display2.onclick = function () {
-  dis.classList.add("display");
-  dis2.classList.add("display");
-  dis3.classList.remove("display");
-  dis4.classList.add("display");
+  hide(".languages");
+  hide(".skills");
+  show(".projects");
+  hide(".home");
 };
 display3.onclick = function () {
-  dis.classList.add("display");
-  dis2.classList.remove("display");
-  dis3.classList.add("display");
-  dis4.classList.add("display");
+  hide(".languages");
+  show(".skills");
+  hide(".projects");
+  hide(".home");
 };
 display4.onclick = function () {
-  dis.classList.add("display");
-  dis2.classList.add("display");
-  dis3.classList.add("display");
-  dis4.classList.remove("display");
+  hide(".languages");
+  hide(".skills");
+  hide(".projects");
+  show(".home");
 };
