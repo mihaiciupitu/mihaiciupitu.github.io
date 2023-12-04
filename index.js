@@ -48,6 +48,7 @@ function show(clasa) {
 function hide(clasa) {
   document.querySelector(clasa).classList.add("display");
 }
+var activePage = ".home";
 var display1 = document.querySelector(".link4");
 var display2 = document.querySelector(".link3");
 var display3 = document.querySelector(".link2");
@@ -55,25 +56,22 @@ var display4 = document.querySelector(".link1");
 
 display1.onclick = function () {
   show(".languages");
-  hide(".skills");
-  hide(".projects");
-  hide(".home");
+  hide(activePage);
+  activePage = ".languages";
 };
 display2.onclick = function () {
-  hide(".languages");
-  hide(".skills");
+  hide(activePage);
   show(".projects");
-  hide(".home");
+
+  activePage = ".projects";
 };
 display3.onclick = function () {
-  hide(".languages");
+  hide(activePage);
   show(".skills");
-  hide(".projects");
-  hide(".home");
+  activePage = ".skills";
 };
 display4.onclick = function () {
-  hide(".languages");
-  hide(".skills");
-  hide(".projects");
+  hide(activePage);
   show(".home");
+  activePage = ".home";
 };
