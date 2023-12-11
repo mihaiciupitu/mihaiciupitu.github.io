@@ -1,6 +1,7 @@
 var active = document.querySelector(".link1");
-active.addEventListener("click", function () {
+active.addEventListener("click", function (e) {
   active.classList.add("active");
+  showPage(".home");
 });
 document.addEventListener("click", function (event) {
   if (event.target != active) active.classList.remove("active");
@@ -8,6 +9,7 @@ document.addEventListener("click", function (event) {
 var active2 = document.querySelector(".link2");
 active2.addEventListener("click", function () {
   active2.classList.add("active");
+  showPage(".skills");
 });
 document.addEventListener("click", function (event) {
   if (event.target != active2) active2.classList.remove("active");
@@ -15,6 +17,7 @@ document.addEventListener("click", function (event) {
 var active3 = document.querySelector(".link3");
 active3.addEventListener("click", function () {
   active3.classList.add("active");
+  showPage(".projects");
 });
 document.addEventListener("click", function (event) {
   if (event.target != active3) active3.classList.remove("active");
@@ -22,6 +25,7 @@ document.addEventListener("click", function (event) {
 var active4 = document.querySelector(".link4");
 active4.addEventListener("click", function () {
   active4.classList.add("active");
+  showPage(".languages");
 });
 document.addEventListener("click", function (event) {
   if (event.target != active4) active4.classList.remove("active");
