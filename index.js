@@ -63,9 +63,11 @@ function showPage(clasa) {
 var activePage = ".home";
 function showSkills() {
   var ul = document.querySelector(".skills ul");
-  ul.innerHTML = "<li> HTML</li>";
-  ul.innerHTML += "<li> CSS </li> ";
-  ul.innerHTML += "<li> JS </li>";
+  var skills = ["HTML ", "CSS ", "JS"];
+  var text = skills.map(function (skill) {
+    return `<li> ${skill}</li>`;
+  });
+  ul.innerHTML = text.join("");
 }
 showPage(activePage);
 showSkills();
