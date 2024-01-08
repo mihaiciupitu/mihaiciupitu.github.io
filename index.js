@@ -1,5 +1,5 @@
 var active = document.querySelector(".link1");
-active.addEventListener("click", function (e) {
+active.addEventListener("click", function () {
   active.classList.add("active");
   showPage(".home");
 });
@@ -61,3 +61,11 @@ function showPage(clasa) {
 }
 
 var activePage = ".home";
+function showSkills() {
+  var ul = document.querySelector(".skills ul");
+  ul.innerHTML = "<li> HTML</li>";
+  ul.innerHTML += "<li> CSS </li> ";
+  ul.innerHTML += "<li> JS </li>";
+}
+showPage(activePage);
+showSkills();
