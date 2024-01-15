@@ -1,4 +1,6 @@
-var active = document.querySelector(".link1");
+//dolarul e shortened query selector
+
+var active = $(".link1");
 active.addEventListener("click", function () {
   active.classList.add("active");
   showPage(".home");
@@ -6,7 +8,7 @@ active.addEventListener("click", function () {
 document.addEventListener("click", function (event) {
   if (event.target != active) active.classList.remove("active");
 });
-var active2 = document.querySelector(".link2");
+var active2 = $(".link2");
 active2.addEventListener("click", function () {
   active2.classList.add("active");
   showPage(".skills");
@@ -14,7 +16,7 @@ active2.addEventListener("click", function () {
 document.addEventListener("click", function (event) {
   if (event.target != active2) active2.classList.remove("active");
 });
-var active3 = document.querySelector(".link3");
+var active3 = $(".link3");
 active3.addEventListener("click", function () {
   active3.classList.add("active");
   showPage(".projects");
@@ -22,7 +24,7 @@ active3.addEventListener("click", function () {
 document.addEventListener("click", function (event) {
   if (event.target != active3) active3.classList.remove("active");
 });
-var active4 = document.querySelector(".link4");
+var active4 = $(".link4");
 active4.addEventListener("click", function () {
   active4.classList.add("active");
   showPage(".languages");
@@ -31,11 +33,11 @@ document.addEventListener("click", function (event) {
   if (event.target != active4) active4.classList.remove("active");
 });
 
-var icon = document.getElementById("icon");
-var imgdark = document.querySelector(".image");
-var logodark = document.querySelector(".logo");
-var logo2dark = document.querySelector(".logo2");
-var logo3dark = document.querySelector(".logo3");
+var icon = $("#" + "icon");
+var imgdark = $(".image");
+var logodark = $(".logo");
+var logo2dark = $(".logo2");
+var logo3dark = $(".logo3");
 icon.onclick = function () {
   document.body.classList.toggle("dark-theme");
   imgdark.classList.toggle("image-dark");
@@ -48,10 +50,10 @@ icon.onclick = function () {
 };
 
 function show(clasa) {
-  document.querySelector(clasa).classList.remove("display");
+  $(clasa).classList.remove("display");
 }
 function hide(clasa) {
-  document.querySelector(clasa).classList.add("display");
+  $(clasa).classList.add("display");
 }
 function showPage(clasa) {
   hide(activePage);
@@ -59,10 +61,14 @@ function showPage(clasa) {
 
   activePage = clasa;
 }
-
+function $(selector) {
+  console.info("gaseste elementul : %o ", selector);
+  var el = document.querySelector(selector);
+  return el;
+}
 var activePage = ".home";
 function showSkills() {
-  var ul = document.querySelector(".skills ul");
+  var ul = $(".skills ul");
   var skills = [
     { name: "HTML", endorsement: 10 },
     { name: "CSS ", endorsement: 10 },
