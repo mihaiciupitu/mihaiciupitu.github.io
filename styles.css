@@ -191,6 +191,9 @@ footer {
 .home {
   font-size: larger;
 }
+.skills li span {
+  color: var(--secondary-color);
+}
 
 @media screen and (max-width: 600px) {
   .info {
