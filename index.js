@@ -67,13 +67,8 @@ function $(selector) {
   return el;
 }
 var activePage = ".home";
-function showSkills() {
+function showSkills(skills) {
   var ul = $(".skills ul");
-  var skills = [
-    { name: "HTML", endorsement: 10 },
-    { name: "CSS ", endorsement: 10 },
-    { name: "JS", endorsement: 8, favorite: true },
-  ];
 
   var text = skills.map(function (skill) {
     var cls = "";
@@ -84,5 +79,16 @@ function showSkills() {
   });
   ul.innerHTML = text.join("");
 }
+function loadSkills() {
+  var promise = fetch("skills.json");
+  console.warn(promise);
+  promise.then(function (r) {
+    const jsonPromise = r.json();
+    jsonPromise.then(function (skills) {
+      showSkills(skills);
+    });
+  });
+}
+
 showPage(activePage);
-showSkills();
+loadSkills();
