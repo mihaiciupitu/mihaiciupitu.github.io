@@ -67,7 +67,17 @@ function $(selector) {
   return el;
 }
 var activePage = ".home";
+function sortSkillsByEndorsement(a, b) {
+  console.info("sort ", a, b);
+
+  return b.endorsement - a.endorsement;
+}
+function sortByName(a, b) {
+  return a.name.localeCompare(b.name);
+}
 function showSkills(skills) {
+  //skills.sort(sortSkillsByEndorsement);
+  skills.sort(sortByName);
   var ul = $(".skills ul");
 
   var text = skills.map(function (skill) {
