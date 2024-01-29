@@ -1,6 +1,6 @@
 //dolarul e shortened query selector
 
-var active = $(".link1");
+const active = $(".link1");
 active.addEventListener("click", function () {
   active.classList.add("active");
   showPage(".home");
@@ -8,7 +8,7 @@ active.addEventListener("click", function () {
 document.addEventListener("click", function (event) {
   if (event.target != active) active.classList.remove("active");
 });
-var active2 = $(".link2");
+const active2 = $(".link2");
 active2.addEventListener("click", function () {
   active2.classList.add("active");
   showPage(".skills");
@@ -16,7 +16,7 @@ active2.addEventListener("click", function () {
 document.addEventListener("click", function (event) {
   if (event.target != active2) active2.classList.remove("active");
 });
-var active3 = $(".link3");
+const active3 = $(".link3");
 active3.addEventListener("click", function () {
   active3.classList.add("active");
   showPage(".projects");
@@ -24,7 +24,7 @@ active3.addEventListener("click", function () {
 document.addEventListener("click", function (event) {
   if (event.target != active3) active3.classList.remove("active");
 });
-var active4 = $(".link4");
+const active4 = $(".link4");
 active4.addEventListener("click", function () {
   active4.classList.add("active");
   showPage(".languages");
@@ -33,11 +33,11 @@ document.addEventListener("click", function (event) {
   if (event.target != active4) active4.classList.remove("active");
 });
 
-var icon = $("#" + "icon");
-var imgdark = $(".image");
-var logodark = $(".logo");
-var logo2dark = $(".logo2");
-var logo3dark = $(".logo3");
+const icon = $("#" + "icon");
+const imgdark = $(".image");
+const logodark = $(".logo");
+const logo2dark = $(".logo2");
+const logo3dark = $(".logo3");
 icon.onclick = function () {
   document.body.classList.toggle("dark-theme");
   imgdark.classList.toggle("image-dark");
@@ -63,10 +63,10 @@ function showPage(clasa) {
 }
 function $(selector) {
   console.info("gaseste elementul : %o ", selector);
-  var el = document.querySelector(selector);
+  const el = document.querySelector(selector);
   return el;
 }
-var activePage = ".home";
+let activePage = ".home";
 function sortSkillsByEndorsement(a, b) {
   console.info("sort ", a, b);
 
@@ -78,10 +78,10 @@ function sortByName(a, b) {
 function showSkills(skills) {
   //skills.sort(sortSkillsByEndorsement);
   skills.sort(sortByName);
-  var ul = $(".skills ul");
+  const ul = $(".skills ul");
 
-  var text = skills.map(function (skill) {
-    var cls = "";
+  const text = skills.map(function (skill) {
+    let cls = "";
     if (skill.favorite == true) {
       cls = "favorite";
     }
