@@ -80,7 +80,7 @@ function showSkills(skills) {
   skills.sort(sortByName);
   const ul = $(".skills ul");
 
-  const text = skills.map(function (skill) {
+  const text = skills.map((skill) => {
     let cls = "";
     if (skill.favorite == true) {
       cls = "favorite";
@@ -90,8 +90,8 @@ function showSkills(skills) {
   ul.innerHTML = text.join("");
 }
 function loadSkills() {
-  fetch("skills.json").then(function (r) {
-    r.json().then(function (skills) {
+  fetch("skills.json").then((r) => {
+    r.json().then((skills) => {
       showSkills(skills);
     });
   });
