@@ -24,14 +24,7 @@ active3.addEventListener("click", function () {
 document.addEventListener("click", function (event) {
   if (event.target != active3) active3.classList.remove("active");
 });
-const active4 = $(".link4");
-active4.addEventListener("click", function () {
-  active4.classList.add("active");
-  showPage(".languages");
-});
-document.addEventListener("click", function (event) {
-  if (event.target != active4) active4.classList.remove("active");
-});
+
 
 const icon = $("#" + "icon");
 const imgdark = $(".image");
