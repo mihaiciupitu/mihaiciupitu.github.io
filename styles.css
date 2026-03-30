@@ -185,6 +185,11 @@ footer {
   margin-top: 5px;
 }
 
+.skills span:not(:last-child)::after {
+  content: " |";
+  margin-left: 0.4rem;
+}
+
 @media screen and (max-width: 600px) {
   .info {
     font-size: 7px;
