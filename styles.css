@@ -190,6 +190,52 @@ footer {
   margin: 0 0.4rem;
 }
 
+/* Before/after screenshots for the Audio Sample Library Organiser.
+   Two-up on desktop, stacked on narrow screens (flex-wrap). Each shot is
+   capped in height and cropped from the top, so the pair stays compact;
+   the full-size image is one click away via the wrapping link. */
+.before-after {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 18px 0;
+}
+.before-after figure {
+  flex: 1 1 240px;
+  margin: 0;
+  min-width: 0;
+}
+/* The global `a { display: inline-block }` makes the link shrink-wrap its
+   image, so the img's width:100% has no definite width to resolve against
+   and the two panels come out different widths. Block re-establishes it. */
+.before-after a {
+  display: block;
+}
+.before-after img {
+  display: block;
+  width: 100%;
+  /* A FIXED height, not max-height: with max-height the image shrinks its
+     own width to keep its aspect ratio, the box never becomes smaller than
+     the content, and object-fit has nothing to crop — which left the two
+     panels at different widths. A definite height makes both panels match
+     and lets object-fit crop from the top. */
+  height: 340px;
+  object-fit: cover;
+  object-position: top left;
+  border: 1px solid var(--secondary-color);
+  border-radius: 2px;
+}
+.before-after figcaption {
+  font-size: 0.8em;
+  margin-top: 5px;
+  opacity: 0.85;
+}
+.shot-note {
+  font-size: 0.85em;
+  opacity: 0.85;
+  margin-top: 0;
+}
+
 @media screen and (max-width: 600px) {
   .info {
     font-size: 7px;
