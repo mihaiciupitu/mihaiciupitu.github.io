@@ -61,35 +61,10 @@ function $(selector) {
   return el;
 }
 let activePage = ".home";
-function sortSkillsByEndorsement(a, b) {
-  console.info("sort ", a, b);
 
-  return b.endorsement - a.endorsement;
-}
-function sortByName(a, b) {
-  return a.name.localeCompare(b.name);
-}
-function showSkills(skills) {
-  //skills.sort(sortSkillsByEndorsement);
-  skills.sort(sortByName);
-  const ul = $(".skills ul");
-
-  const text = skills.map((skill) => {
-    let cls = "";
-    if (skill.favorite == true) {
-      cls = "favorite";
-    }
-    return `<li class = "${cls}"> ${skill.name} <span> - ${skill.endorsement} </span></li>`;
-  });
-  ul.innerHTML = text.join("");
-}
-function loadSkills() {
-  fetch("skills.json").then((r) => {
-    r.json().then((skills) => {
-      showSkills(skills);
-    });
-  });
-}
+// Skills are written directly in index.html now (see .skills-group /
+// .skills-list). The old loadSkills()/skills.json fetch was removed: it
+// injected "HTML - 10, CSS - 10, JS - 8" into `.skills ul` and would
+// overwrite the real skills list the moment a <ul> appeared in that section.
 
 showPage(activePage);
-loadSkills();
