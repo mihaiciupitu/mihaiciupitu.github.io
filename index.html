@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -21,7 +21,9 @@
         <div class="info">
           <h1>Mihai-Andrei Ciupitu</h1>
 
-          <h2 id="job-title">AI Evaluation · Applied Machine Learning · Audio ML</h2>
+          <h2 id="job-title">
+            AI Evaluation · Applied Machine Learning · Audio ML
+          </h2>
         </div>
       </div>
       <img src="/images/sun.png" id="icon" />
@@ -46,9 +48,9 @@
               <p>
                 I'm Mihai-Andrei Ciupitu, a London-based engineer working on
                 audio machine learning and AI evaluation as independent,
-                self-directed work. I design ML systems end to end, and I'm at
-                my most useful in the part most people skip: proving an
-                improvement is actually real before believing it.
+                self-directed work. I design ML systems end to end, and the part
+                I care most about is proving an improvement is real before
+                believing it.
               </p>
               <p>
                 Most recently I built an audio classification pipeline over
@@ -57,8 +59,7 @@
                 measured rounds. Along the way I found and corrected errors in
                 my own evaluation method, including a headline metric that
                 turned out to be contaminated, and a change that improved my
-                test scores while quietly making the system worse on real
-                audio.
+                test scores while quietly making the system worse on real audio.
               </p>
             </div>
 
@@ -91,8 +92,8 @@
                 <h3>Build for Diagnosis</h3>
                 <p>
                   I design systems so that when they fail, I can tell exactly
-                  which decision failed and why. That usually means more work
-                  up front and a less elegant diagram, but it's the difference
+                  which decision failed and why. That usually means more work up
+                  front and a less elegant diagram, but it's the difference
                   between fixing a problem and guessing at it.
                 </p>
               </div>
@@ -103,9 +104,10 @@
               <p>
                 I'm looking for junior roles in AI evaluation, applied machine
                 learning, or audio ML. I want work where the job is to
-                understand why a model behaves the way it does, not only to
-                make it score higher, and I'm especially drawn to teams that
-                treat evaluation as a first-class engineering problem.
+                understand why a model behaves the way it does, not only to make
+                it score higher, and I'd like to work somewhere that treats "how
+                do we know this actually works?" as part of the engineering
+                rather than a box to tick at the end.
               </p>
             </div>
           </div>
@@ -238,16 +240,16 @@
           <p class="shot-note">
             The names containing "or", such as
             <em>HiHat_Loop_or_Perc_Loop_74Bars.wav</em>, are deliberate. Those
-            are the files the system was not confident about, and it labels
-            them with both candidates and sets them aside for review rather
-            than picking one and being quietly wrong. Click either image to
-            view it full size.
+            are the files the system was not confident about, and it labels them
+            with both candidates and sets them aside for review rather than
+            picking one and being quietly wrong. Click either image to view it
+            full size.
           </p>
 
           <p>
             <strong
-              >The hard part wasn't classifying audio. It was proving the
-              system actually got better.</strong
+              >The hard part wasn't classifying audio. It was proving the system
+              actually got better.</strong
             >
           </p>
 
@@ -255,8 +257,8 @@
             <li>
               Raised confident accuracy on a fresh 800-file library, audio the
               system had never seen, from 67% to 84% across 17 measured rounds.
-              Around half the gain landed on files I never hand-corrected,
-              which is the evidence it generalised rather than memorised.
+              Around half the gain landed on files I never hand-corrected, which
+              is the evidence it generalised rather than memorised.
             </li>
             <li>
               Rejected an upgrade that improved held-out accuracy by 6 points.
@@ -267,13 +269,13 @@
             <li>
               Audited my own headline metric and found it contaminated:
               hand-corrected files were being counted inside the generalisation
-              number. Published the honest figure (71%, not 80%) and changed
-              how I report results.
+              number. Published the honest figure (71%, not 80%) and changed how
+              I report results.
             </li>
             <li>
-              Built a correction system where every human fix is logged with
-              its failure mode and the model's full reasoning at the time, plus
-              a regression suite that re-checks all 125 past corrections after
+              Built a correction system where every human fix is logged with its
+              failure mode and the model's full reasoning at the time, plus a
+              regression suite that re-checks all 125 past corrections after
               every retrain.
             </li>
           </ul>
@@ -282,17 +284,17 @@
             Rather than one model making a single guess, ten independent
             classifiers each answer one narrow question (is there a kick? is it
             a loop? is it tonal?) and a deterministic rule layer assembles the
-            verdict. Slower to build, but when it gets something wrong I can
-            see exactly which judgement failed.
+            verdict. Slower to build, but when it gets something wrong I can see
+            exactly which judgement failed.
           </p>
 
           <h3 class="project-title">
             <a href="/poker-planning" target="_blank">Poker Planning</a>
           </h3>
           <p>
-            A real-time multiplayer planning poker app built with JavaScript
-            and Socket.io. An agile estimation tool where players join a
-            session, vote anonymously on task complexity, and reveal results
+            A real-time multiplayer planning poker app built with JavaScript and
+            Socket.io. An agile estimation tool where players join a session,
+            vote anonymously on task complexity, and reveal results
             simultaneously, with live average calculation across all
             participants.
           </p>
@@ -301,9 +303,8 @@
           <p>
             A C++ console tool that solves word puzzles using file I/O,
             candidate filtering and letter-frequency analysis to narrow a large
-            dictionary down to viable answers. Validated through structured
-            test cases covering edge conditions rather than happy-path input
-            alone.
+            dictionary down to viable answers. Validated through structured test
+            cases covering edge conditions rather than happy-path input alone.
           </p>
 
           <h3 class="project-title">
