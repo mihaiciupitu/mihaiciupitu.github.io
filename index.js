@@ -1,4 +1,3 @@
-//dolarul e shortened query selector
 
 const active = $(".link1");
 active.addEventListener("click", function () {
@@ -66,5 +65,7 @@ let activePage = ".home";
 // .skills-list). The old loadSkills()/skills.json fetch was removed: it
 // injected "HTML - 10, CSS - 10, JS - 8" into `.skills ul` and would
 // overwrite the real skills list the moment a <ul> appeared in that section.
+
+showPage(activePage);
 
 showPage(activePage);
