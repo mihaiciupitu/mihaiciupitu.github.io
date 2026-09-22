@@ -235,7 +235,10 @@ footer {
   opacity: 0.85;
   margin-top: 0;
 }
-
+.projects,
+.projects li {
+  font-size: inherit;
+}
 @media screen and (max-width: 600px) {
   .info {
     font-size: 7px;
